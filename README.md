@@ -16,6 +16,10 @@ You might have read this and thought: "That's just what the enter key does!" How
 ## Installing
 
 1. Clone this repository, open in xcode
+1. Under the project, signing, for both targets: 
+    1. Select a team (You may have to create a developer account - free for use locally)
+    2. Change signing certificate to "Development"
+    3. (For Xcode version < 12 only) Change the XCodeKit framework to "Do not Embed"
 2. Product > Archive
 3. Wait for build to complete and organizer to appear with new archive selected
 4. Select Distribute App
