@@ -12,7 +12,48 @@
 		DAD041D4252C05C6000584A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D3252C05C6000584A4 /* Assets.xcassets */; };
 		DAD041D7252C05C6000584A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D6252C05C6000584A4 /* Preview Assets.xcassets */; };
 		DAD041DA252C05C6000584A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D8252C05C6000584A4 /* Main.storyboard */; };
+		DAD041EA252C0620000584A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041E9252C0620000584A4 /* Cocoa.framework */; };
+		DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */; };
+		DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */; };
+		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; };
+		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAD041F4252C0620000584A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD041C4252C05C5000584A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD041E6252C0620000584A4;
+			remoteInfo = XLineTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAD041FA252C0620000584A4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAD041F6252C0620000584A4 /* XLineTools.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD04201252C0872000584A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DAD041CC252C05C5000584A4 /* XLineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +64,13 @@
 		DAD041D9252C05C6000584A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAD041DB252C05C6000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD041DC252C05C6000584A4 /* XLineTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTool.entitlements; sourceTree = "<group>"; };
+		DAD041E7252C0620000584A4 /* XLineTools.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XLineTools.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD041E9252C0620000584A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DAD041EB252C0620000584A4 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		DAD041F2252C0620000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD041F3252C0620000584A4 /* XLineTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTools.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD041E4252C0620000584A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD041EA252C0620000584A4 /* Cocoa.framework in Frameworks */,
+				DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				DAD041CE252C05C5000584A4 /* XLineTool */,
+				DAD041ED252C0620000584A4 /* XLineTools */,
+				DAD041E8252C0620000584A4 /* Frameworks */,
 				DAD041CD252C05C5000584A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD041CC252C05C5000584A4 /* XLineTool.app */,
+				DAD041E7252C0620000584A4 /* XLineTools.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +134,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DAD041E8252C0620000584A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD041E9252C0620000584A4 /* Cocoa.framework */,
+				DAD041EB252C0620000584A4 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD041ED252C0620000584A4 /* XLineTools */ = {
+			isa = PBXGroup;
+			children = (
+				DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */,
+				DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */,
+				DAD041F2252C0620000584A4 /* Info.plist */,
+				DAD041F3252C0620000584A4 /* XLineTools.entitlements */,
+			);
+			path = XLineTools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,15 +164,35 @@
 				DAD041C8252C05C5000584A4 /* Sources */,
 				DAD041C9252C05C5000584A4 /* Frameworks */,
 				DAD041CA252C05C5000584A4 /* Resources */,
+				DAD041FA252C0620000584A4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAD041F5252C0620000584A4 /* PBXTargetDependency */,
 			);
 			name = XLineTool;
 			productName = XLineTool;
 			productReference = DAD041CC252C05C5000584A4 /* XLineTool.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DAD041E6252C0620000584A4 /* XLineTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD041F7252C0620000584A4 /* Build configuration list for PBXNativeTarget "XLineTools" */;
+			buildPhases = (
+				DAD041E3252C0620000584A4 /* Sources */,
+				DAD041E4252C0620000584A4 /* Frameworks */,
+				DAD041E5252C0620000584A4 /* Resources */,
+				DAD04201252C0872000584A4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLineTools;
+			productName = XLineTools;
+			productReference = DAD041E7252C0620000584A4 /* XLineTools.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +204,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					DAD041CB252C05C5000584A4 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DAD041E6252C0620000584A4 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -122,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				DAD041CB252C05C5000584A4 /* XLineTool */,
+				DAD041E6252C0620000584A4 /* XLineTools */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +241,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD041E5252C0620000584A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,7 +260,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD041E3252C0620000584A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */,
+				DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAD041F5252C0620000584A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD041E6252C0620000584A4 /* XLineTools */;
+			targetProxy = DAD041F4252C0620000584A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DAD041D8252C05C6000584A4 /* Main.storyboard */ = {
@@ -281,6 +409,7 @@
 		DAD041E0252C05C6000584A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XLineTool/XLineTool.entitlements;
@@ -305,6 +434,7 @@
 		DAD041E1252C05C6000584A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XLineTool/XLineTool.entitlements;
@@ -326,6 +456,48 @@
 			};
 			name = Release;
 		};
+		DAD041F8252C0620000584A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XLineTools/XLineTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q6848ZXJSC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XLineTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool.XLineTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DAD041F9252C0620000584A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XLineTools/XLineTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q6848ZXJSC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = XLineTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool.XLineTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +515,15 @@
 			buildConfigurations = (
 				DAD041E0252C05C6000584A4 /* Debug */,
 				DAD041E1252C05C6000584A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD041F7252C0620000584A4 /* Build configuration list for PBXNativeTarget "XLineTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD041F8252C0620000584A4 /* Debug */,
+				DAD041F9252C0620000584A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
