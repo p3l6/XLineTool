@@ -17,7 +17,7 @@
 		DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */; };
 		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; };
-		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
