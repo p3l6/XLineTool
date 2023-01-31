@@ -24,9 +24,9 @@ You might have read this and thought: "That's just what the enter key does!" How
 3. Wait for build to complete and organizer to appear with new archive selected
 4. Select Distribute App
 5. Select Copy App
-6. Choose a location, such as `/Users/you/Applications/`, and export
+6. Choose a location, such as `thisRepo/builds/`, and export
 7. Launch and then quit that application
-8. Open system preferences > Extensions > Xcode Source Editor
+8. Open system preferences > Privacy & Security > Extensions > Xcode Source Editor
 9. Enable XLineTools
 10. Restart Xcode
 11. In Xcode preferences > Key Bindings: filter by `xline` and set key shortcuts as you choose
