@@ -23,7 +23,7 @@ You might have read this and thought: "That's just what the enter key does!" How
 2. Product > Archive
 3. Wait for build to complete and organizer to appear with new archive selected
 4. Select Distribute App
-5. Select Copy App
+5. Select Custom > Copy App
 6. Choose a location, such as `thisRepo/builds/`, and export
 7. Launch and then quit that application
 8. Open system preferences > Privacy & Security > Extensions > Xcode Source Editor
