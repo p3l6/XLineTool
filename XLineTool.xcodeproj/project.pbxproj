@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		DAD041EA252C0620000584A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041E9252C0620000584A4 /* Cocoa.framework */; };
 		DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */; };
 		DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */; };
-		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; };
 		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -31,15 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DAD041FA252C0620000584A4 /* Embed App Extensions */ = {
+		DAD041FA252C0620000584A4 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DAD041F6252C0620000584A4 /* XLineTools.appex in Embed App Extensions */,
+				DAD041F6252C0620000584A4 /* XLineTools.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DAD04201252C0872000584A4 /* Embed Frameworks */ = {
@@ -168,7 +168,7 @@
 				DAD041C8252C05C5000584A4 /* Sources */,
 				DAD041C9252C05C5000584A4 /* Frameworks */,
 				DAD041CA252C05C5000584A4 /* Resources */,
-				DAD041FA252C0620000584A4 /* Embed App Extensions */,
+				DAD041FA252C0620000584A4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -204,8 +204,9 @@
 		DAD041C4252C05C5000584A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					DAD041CB252C05C5000584A4 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -329,9 +330,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -346,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -390,9 +393,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -401,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -420,6 +425,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"XLineTool/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -430,7 +436,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -446,6 +452,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"XLineTool/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -456,7 +463,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -470,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XLineTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,7 +485,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool.XLineTools;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool.XLineTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -492,6 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XLineTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,7 +508,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pwxn.XLineTool.XLineTools;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool.XLineTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
