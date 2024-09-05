@@ -15,6 +15,10 @@ You might have read this and thought: "That's just what the enter key does!" How
 
 ## Installing
 
+Can be downloaded and installed from the github releases page.
+
+## Building from source
+
 1. Clone this repository, open in xcode
 1. Under the project, signing, for both targets: 
     1. Select a team (You may have to create a developer account - free for use locally)

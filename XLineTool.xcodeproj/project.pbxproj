@@ -72,6 +72,7 @@
 		DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		DAD041F2252C0620000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD041F3252C0620000584A4 /* XLineTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTools.entitlements; sourceTree = "<group>"; };
+		DAD99B4F2C89DD7000CBBE2F /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		DAD041C3252C05C5000584A4 = {
 			isa = PBXGroup;
 			children = (
+				DAD99B4F2C89DD7000CBBE2F /* Changelog.md */,
 				DA0152B9252C165900C06CB4 /* README.md */,
 				DAD041CE252C05C5000584A4 /* XLineTool */,
 				DAD041ED252C0620000584A4 /* XLineTools */,
