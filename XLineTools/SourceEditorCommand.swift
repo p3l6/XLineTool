@@ -11,7 +11,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         }
         
         switch invocation.commandIdentifier {
-        case "pwxn.XLineTool.XLineTools.Duplicate":
+        case "dev.p3l6.XLineTool.XLineTools.Duplicate":
 //            print("Doing: Duplicate")
             var duplicated = [String]()
             for index in selectedLines.start.line...selectedLines.end.line {
@@ -30,7 +30,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             }
             completionHandler(nil)
 
-        case "pwxn.XLineTool.XLineTools.NewlineAfter":
+        case "dev.p3l6.XLineTool.XLineTools.NewlineAfter":
 //            print("Doing: Newline")
             let at = selectedLines.end.line+1
             var column = 0
