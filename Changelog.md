@@ -12,6 +12,10 @@ Types of changes: New, Improved, Fixed, Removed.
 
 -
 
+## [1.1.0] - 16 Sept 2025
+
+- New: Update for macOS Tahoe
+
 ## [1.0.0] - 5 Sept 2024
 
 - New: First release with prebuilt binary
