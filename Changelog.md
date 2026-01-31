@@ -10,7 +10,9 @@ Types of changes: New, Improved, Fixed, Removed.
 
 ## [Unreleased]
 
--
+## [1.1.1] - 30 Jan 2026
+
+- Fixed: No longer duplicates an extra line in cases where the entire line is selected
 
 ## [1.1.0] - 16 Sept 2025
 

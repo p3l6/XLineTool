@@ -4,24 +4,24 @@ import XcodeKit
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
-        // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
         guard let selectedLines = invocation.buffer.selections.firstObject as? XCSourceTextRange else {
             completionHandler(NSError(domain: "No Selection", code: 1, userInfo: nil))
             return
         }
-        
+
+        let rejectFinal = selectedLines.start.line != selectedLines.end.line && selectedLines.end.column == 0
+        let endLine = rejectFinal ? selectedLines.end.line - 1 : selectedLines.end.line
+
         switch invocation.commandIdentifier {
         case "dev.p3l6.XLineTool.XLineTools.Duplicate":
-//            print("Doing: Duplicate")
             var duplicated = [String]()
-            for index in selectedLines.start.line...selectedLines.end.line {
+            for index in selectedLines.start.line...endLine {
                 if index < invocation.buffer.lines.count {
                     duplicated.append(invocation.buffer.lines[index] as! String)
                 }
             }
-//            print(duplicated)
             for (index, line) in duplicated.enumerated() {
-                let at = selectedLines.end.line+1+index
+                let at = endLine + 1 + index
                 if at < invocation.buffer.lines.count {
                     invocation.buffer.lines.insert(line, at: at)
                 } else {
@@ -31,8 +31,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             completionHandler(nil)
 
         case "dev.p3l6.XLineTool.XLineTools.NewlineAfter":
-//            print("Doing: Newline")
-            let at = selectedLines.end.line+1
+            let at = endLine + 1
             var column = 0
             if at < invocation.buffer.lines.count {
                 let line = (invocation.buffer.lines[selectedLines.end.line] as! String).prefix { (char: Character) -> Bool in
