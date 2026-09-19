@@ -15,7 +15,7 @@ You might have read this and thought: "That's just what the enter key does!" How
 
 ## Installing
 
-Can be downloaded and installed from the github releases page.
+Can be downloaded and installed from the github releases page, or installed via homebrew: `brew install p3l6/tap/xlinetool`
 
 ## Building from source
 
@@ -35,4 +35,4 @@ Can be downloaded and installed from the github releases page.
 10. Restart Xcode
 11. In Xcode preferences > Key Bindings: filter by `xline` and set key shortcuts as you choose
 
-The commands will also appear under the menu: Editor > XLineTool. If this does not show up, it means something went wrong with the extension install process. Unfortunatly, extensions are quite finicky and break sometimes for inexplicable reasons. All I can suggest is to try again.  
+The commands will also appear under the menu: Editor > XLineTool. If this does not show up, it means something went wrong with the extension install process. Unfortunatly, extensions are quite finicky and break sometimes for inexplicable reasons. All I can suggest is to try again.

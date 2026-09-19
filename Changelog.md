@@ -10,6 +10,8 @@ Types of changes: New, Improved, Fixed, Removed.
 
 ## [Unreleased]
 
+
+
 ## [1.1.1] - 30 Jan 2026
 
 - Fixed: No longer duplicates an extra line in cases where the entire line is selected
@@ -22,4 +24,4 @@ Types of changes: New, Improved, Fixed, Removed.
 
 - New: First release with prebuilt binary
 - New: Xcode command to duplicate the selected line
-- New: Xcode command to start a new line after the current one 
+- New: Xcode command to start a new line after the current one
