@@ -7,22 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAD041D0252C05C5000584A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041CF252C05C5000584A4 /* AppDelegate.swift */; };
-		DAD041D2252C05C5000584A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041D1252C05C5000584A4 /* ContentView.swift */; };
-		DAD041D4252C05C6000584A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D3252C05C6000584A4 /* Assets.xcassets */; };
-		DAD041D7252C05C6000584A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D6252C05C6000584A4 /* Preview Assets.xcassets */; };
-		DAD041DA252C05C6000584A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD041D8252C05C6000584A4 /* Main.storyboard */; };
 		DAD041EA252C0620000584A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041E9252C0620000584A4 /* Cocoa.framework */; };
-		DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */; };
-		DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */; };
 		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; };
 		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAD5F993305EFEA000F01EF0 /* SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */; };
-		DAD5F99B305F00BB00F01EF0 /* SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */; };
-		DAD5F99D305F012C00F01EF0 /* SourceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99C305F012C00F01EF0 /* SourceActions.swift */; };
-		DAD5F99E305F012C00F01EF0 /* SourceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99C305F012C00F01EF0 /* SourceActions.swift */; };
-		DAD5F9A0305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,29 +51,42 @@
 /* Begin PBXFileReference section */
 		DA0152B9252C165900C06CB4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAD041CC252C05C5000584A4 /* XLineTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLineTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAD041CF252C05C5000584A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAD041D1252C05C5000584A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DAD041D3252C05C6000584A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DAD041D6252C05C6000584A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DAD041D9252C05C6000584A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DAD041DB252C05C6000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAD041DC252C05C6000584A4 /* XLineTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTool.entitlements; sourceTree = "<group>"; };
 		DAD041E7252C0620000584A4 /* XLineTools.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XLineTools.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD041E9252C0620000584A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DAD041EB252C0620000584A4 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
-		DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
-		DAD041F2252C0620000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAD041F3252C0620000584A4 /* XLineTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTools.entitlements; sourceTree = "<group>"; };
 		DAD5F98B305EFE9300F01EF0 /* XLineToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLineToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextBuffer.swift; sourceTree = "<group>"; };
-		DAD5F99C305F012C00F01EF0 /* SourceActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceActions.swift; sourceTree = "<group>"; };
-		DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+SourceTextBuffer.swift"; sourceTree = "<group>"; };
 		DAD99B4F2C89DD7000CBBE2F /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DAD5F9B2305F0F7700F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DAD041E6252C0620000584A4 /* XLineTools */;
+		};
+		DAD5F9B3305F0F7700F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SourceActions.swift,
+				SourceTextBuffer.swift,
+			);
+			target = DAD5F98A305EFE9300F01EF0 /* XLineToolsTests */;
+		};
+		DAD5F9C4305F0F7C00F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DAD041CB252C05C5000584A4 /* XLineTool */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DAD5F98C305EFE9300F01EF0 /* XLineToolsTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = XLineToolsTests; sourceTree = "<group>"; };
+		DAD5F9A9305F0F7600F01EF0 /* XLineTools */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DAD5F9B2305F0F7700F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, DAD5F9B3305F0F7700F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = XLineTools; sourceTree = "<group>"; };
+		DAD5F9BD305F0F7A00F01EF0 /* XLineTool */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DAD5F9C4305F0F7C00F01EF0 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = XLineTool; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +121,8 @@
 			children = (
 				DAD99B4F2C89DD7000CBBE2F /* Changelog.md */,
 				DA0152B9252C165900C06CB4 /* README.md */,
-				DAD041CE252C05C5000584A4 /* XLineTool */,
-				DAD041ED252C0620000584A4 /* XLineTools */,
+				DAD5F9BD305F0F7A00F01EF0 /* XLineTool */,
+				DAD5F9A9305F0F7600F01EF0 /* XLineTools */,
 				DAD5F98C305EFE9300F01EF0 /* XLineToolsTests */,
 				DAD041E8252C0620000584A4 /* Frameworks */,
 				DAD041CD252C05C5000584A4 /* Products */,
@@ -138,28 +139,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAD041CE252C05C5000584A4 /* XLineTool */ = {
-			isa = PBXGroup;
-			children = (
-				DAD041CF252C05C5000584A4 /* AppDelegate.swift */,
-				DAD041D1252C05C5000584A4 /* ContentView.swift */,
-				DAD041D3252C05C6000584A4 /* Assets.xcassets */,
-				DAD041D8252C05C6000584A4 /* Main.storyboard */,
-				DAD041DB252C05C6000584A4 /* Info.plist */,
-				DAD041DC252C05C6000584A4 /* XLineTool.entitlements */,
-				DAD041D5252C05C6000584A4 /* Preview Content */,
-			);
-			path = XLineTool;
-			sourceTree = "<group>";
-		};
-		DAD041D5252C05C6000584A4 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DAD041D6252C05C6000584A4 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		DAD041E8252C0620000584A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,20 +146,6 @@
 				DAD041EB252C0620000584A4 /* XcodeKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DAD041ED252C0620000584A4 /* XLineTools */ = {
-			isa = PBXGroup;
-			children = (
-				DAD041EE252C0620000584A4 /* SourceEditorExtension.swift */,
-				DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */,
-				DAD041F2252C0620000584A4 /* Info.plist */,
-				DAD041F3252C0620000584A4 /* XLineTools.entitlements */,
-				DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */,
-				DAD5F99C305F012C00F01EF0 /* SourceActions.swift */,
-				DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */,
-			);
-			path = XLineTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +165,9 @@
 			dependencies = (
 				DAD041F5252C0620000584A4 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				DAD5F9BD305F0F7A00F01EF0 /* XLineTool */,
+			);
 			name = XLineTool;
 			productName = XLineTool;
 			productReference = DAD041CC252C05C5000584A4 /* XLineTool.app */;
@@ -217,6 +185,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DAD5F9A9305F0F7600F01EF0 /* XLineTools */,
 			);
 			name = XLineTools;
 			productName = XLineTools;
@@ -291,9 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD041DA252C05C6000584A4 /* Main.storyboard in Resources */,
-				DAD041D7252C05C6000584A4 /* Preview Assets.xcassets in Resources */,
-				DAD041D4252C05C6000584A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD041D2252C05C5000584A4 /* ContentView.swift in Sources */,
-				DAD041D0252C05C5000584A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,11 +293,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD5F99D305F012C00F01EF0 /* SourceActions.swift in Sources */,
-				DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */,
-				DAD5F9A0305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift in Sources */,
-				DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */,
-				DAD5F993305EFEA000F01EF0 /* SourceTextBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD5F99E305F012C00F01EF0 /* SourceActions.swift in Sources */,
-				DAD5F99B305F00BB00F01EF0 /* SourceTextBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,17 +312,6 @@
 			targetProxy = DAD041F4252C0620000584A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DAD041D8252C05C6000584A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAD041D9252C05C6000584A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DAD041DD252C05C6000584A4 /* Debug */ = {
@@ -513,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,7 +491,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,7 +515,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool.XLineTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -592,7 +540,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineTool.XLineTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
