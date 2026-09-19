@@ -59,6 +59,58 @@ struct XLineToolsTests {
         ])
     }
 
+    @Test func `Join next joins a single following line and positions the cursor`() throws {
+        let buffer = MockSourceTextBuffer(
+            lines: ["first   \n", "\t  second\n", "third\n"],
+            selection: range(fromLine: 0, column: 2, toLine: 0, column: 4))
+
+        try JoinNextAction(on: buffer).run()
+
+        #expect(buffer.lines == ["first second\n", "third\n"])
+        #expect(buffer.selection == range(
+            fromLine: 0,
+            column: 5,
+            toLine: 0,
+            column: 5))
+    }
+
+    @Test func `Join next joins all fully selected lines`() throws {
+        let buffer = MockSourceTextBuffer(
+            lines: ["first\n", "  second\n", "\tthird\n", "fourth\n"],
+            selection: range(fromLine: 0, column: 0, toLine: 2, column: 3))
+
+        try JoinNextAction(on: buffer).run()
+
+        #expect(buffer.lines == ["first second third\n", "fourth\n"])
+        #expect(buffer.selection == range(
+            fromLine: 0,
+            column: 5,
+            toLine: 0,
+            column: 5))
+    }
+
+    @Test func `Join next excludes a selection ending at the next line start`() throws {
+        let buffer = MockSourceTextBuffer(
+            lines: ["first\n", "  second\n", "third\n"],
+            selection: range(fromLine: 0, column: 0, toLine: 2, column: 0))
+
+        try JoinNextAction(on: buffer).run()
+
+        #expect(buffer.lines == ["first second\n", "third\n"])
+    }
+
+    @Test func `Join next does nothing on the final line`() throws {
+        let originalSelection = range(fromLine: 1, column: 2, toLine: 1, column: 2)
+        let buffer = MockSourceTextBuffer(
+            lines: ["first\n", "last"],
+            selection: originalSelection)
+
+        try JoinNextAction(on: buffer).run()
+
+        #expect(buffer.lines == ["first\n", "last"])
+        #expect(buffer.selection == originalSelection)
+    }
+
     private func range(
         fromLine startLine: Int,
         column startColumn: Int,

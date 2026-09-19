@@ -21,6 +21,7 @@ protocol SourceTextBuffer {
 
     func line(at index: Int) -> String?
     func replaceLine(at index: Int, with line: String)
+    func removeLine(at index: Int)
     func insert(line: String, at index: Int)
     func append(line: String)
     func setSelection(_ selection: SourceTextRange)

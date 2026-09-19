@@ -67,6 +67,42 @@ class NewlineAction: ActionBase {
     }
 }
 
+class JoinNextAction: ActionBase {
+    func run() {
+        let activeLineIndex = selectedLines.start.line
+        let selectedLineCount = endLine - activeLineIndex + 1
+        let requestedJoinCount = selectedLineCount == 1 ? 1 : selectedLineCount - 1
+        let availableJoinCount = max(0, buffer.lineCount - activeLineIndex - 1)
+        let joinCount = min(requestedJoinCount, availableJoinCount)
+
+        guard joinCount > 0 else {
+            return
+        }
+
+        var cursorColumn = 0
+        for joinIndex in 0 ..< joinCount {
+            guard let activeLine = buffer.line(at: activeLineIndex),
+                  let nextLine = buffer.line(at: activeLineIndex + 1) else {
+                break
+            }
+
+            let activeContent = activeLine
+                .removingLineEnding
+                .trimmingTrailingWhitespace
+            if joinIndex == 0 {
+                cursorColumn = activeContent.count
+            }
+
+            let joinedLine = activeContent + " " + nextLine.trimmingLeadingWhitespace
+            buffer.replaceLine(at: activeLineIndex, with: joinedLine)
+            buffer.removeLine(at: activeLineIndex + 1)
+        }
+
+        let cursor = SourceTextPosition(line: activeLineIndex, column: cursorColumn)
+        buffer.setSelection(SourceTextRange(start: cursor, end: cursor))
+    }
+}
+
 class TrimTrailingWhitespaceAction {
     private let buffer: any SourceTextBuffer
 
@@ -85,6 +121,25 @@ class TrimTrailingWhitespaceAction {
 }
 
 private extension String {
+    var removingLineEnding: String {
+        if hasSuffix("\r\n") {
+            return String(dropLast(2))
+        }
+        if hasSuffix("\n") || hasSuffix("\r") {
+            return String(dropLast())
+        }
+        return self
+    }
+
+    var trimmingLeadingWhitespace: String {
+        String(drop(while: { character in
+            guard let scalar = character.unicodeScalars.first else {
+                return false
+            }
+            return CharacterSet.whitespaces.contains(scalar)
+        }))
+    }
+
     var trimmingTrailingWhitespace: String {
         let lineEnding: String
         let content: Substring

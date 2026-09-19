@@ -32,6 +32,10 @@ extension XCSourceTextBuffer: SourceTextBuffer {
         lines[index] = line
     }
 
+    func removeLine(at index: Int) {
+        lines.removeObject(at: index)
+    }
+
     func insert(line: String, at index: Int) {
         lines.insert(line, at: index)
     }

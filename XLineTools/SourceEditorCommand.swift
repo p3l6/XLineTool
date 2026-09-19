@@ -30,6 +30,14 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         case "dev.p3l6.XLineTool.XLineTools.TrimTrailingWhitespace":
             TrimTrailingWhitespaceAction(on: invocation.buffer).run()
             completionHandler(nil)
+        case "dev.p3l6.XLineTool.XLineTools.JoinNext":
+            do {
+                let action = try JoinNextAction(on: invocation.buffer)
+                action.run()
+                completionHandler(nil)
+            } catch {
+                completionHandler(error.cocoa)
+            }
         default:
             completionHandler(ActionError.unknownCommand(invocation.commandIdentifier).cocoa)
         }

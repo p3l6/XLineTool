@@ -4,20 +4,34 @@ A modern xcode extension adding a few key shortcuts:
 * Duplicate currently selected lines
 * Add a newline after the current selected line
 * Remove all trailing whitespace
+* Join lines
 
 ### Duplicate currently selected lines
+
+_Suggested keybind:_ `cmd+shift+d`
 
 This will duplicate one or more selected lines. It places the copies of the lines after the current selection, while leaving the cursor as is. 
 I like to bind this to `cmd+shift+d`, so that it does the inverse of my "delete line" keybinding: `cmd+d`.
 
 ### Add a newline after the current selected line
 
-You might have read this and thought: "That's just what the enter key does!" However, the key difference here is that the cursor can be anywhere in the current line. In other words, it is the same as doing a `cmd+right` followed by `return`, except that I find it more convinient to bind this action to `shift+return`.
+_Suggested keybind:_ `shift+return`
+
+You might have read this and thought: "That's just what the enter key does!" However, the key difference here is that the cursor can be anywhere in the current line. In other words, it is the same as doing a `cmd+right` followed by `return`.
 
 ### Remove trailing whitespace
 
+_Suggested keybind: none_
+
 This is a more aggresive version of the xcode options "Automatically Trim Trailing Whitespace" and "Trim Whitespace-only Lines".
 There are many conditions where these don't take effect, especially the whitespace-only line option.
+
+### Join lines
+
+_Suggested keybind:_ `cmd+opt+delete`
+
+Joins the following line onto the end of the current line, replacing indentation with a single space. 
+If muliple lines are selected, joins all of them together. 
 
 ## Installing
 

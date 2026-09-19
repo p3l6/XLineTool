@@ -27,6 +27,10 @@ final class MockSourceTextBuffer: SourceTextBuffer {
         lines[index] = line
     }
 
+    func removeLine(at index: Int) {
+        lines.remove(at: index)
+    }
+
     func insert(line: String, at index: Int) {
         lines.insert(line, at: index)
     }
