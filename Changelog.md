@@ -10,7 +10,7 @@ Types of changes: New, Improved, Fixed, Removed.
 
 ## [Unreleased]
 
-
+- New: Action to remove all trailing whitespace (including whitespace-only lines)
 
 ## [1.1.1] - 30 Jan 2026
 

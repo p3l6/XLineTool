@@ -40,6 +40,14 @@
 					<key>XCSourceEditorCommandClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).TrimTrailingWhitespace</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Trim trailing whitespace</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).NewlineAfter</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>New Line After Current</string>

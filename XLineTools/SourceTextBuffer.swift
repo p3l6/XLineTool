@@ -20,6 +20,7 @@ protocol SourceTextBuffer {
     var selection: SourceTextRange? { get }
 
     func line(at index: Int) -> String?
+    func replaceLine(at index: Int, with line: String)
     func insert(line: String, at index: Int)
     func append(line: String)
     func setSelection(_ selection: SourceTextRange)

@@ -23,6 +23,10 @@ final class MockSourceTextBuffer: SourceTextBuffer {
         return lines[index]
     }
 
+    func replaceLine(at index: Int, with line: String) {
+        lines[index] = line
+    }
+
     func insert(line: String, at index: Int) {
         lines.insert(line, at: index)
     }

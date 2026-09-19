@@ -67,6 +67,54 @@ class NewlineAction: ActionBase {
     }
 }
 
+class TrimTrailingWhitespaceAction {
+    private let buffer: any SourceTextBuffer
+
+    init(on buffer: any SourceTextBuffer) {
+        self.buffer = buffer
+    }
+
+    func run() {
+        for index in 0 ..< buffer.lineCount {
+            guard let line = buffer.line(at: index) else {
+                continue
+            }
+            buffer.replaceLine(at: index, with: line.trimmingTrailingWhitespace)
+        }
+    }
+}
+
+private extension String {
+    var trimmingTrailingWhitespace: String {
+        let lineEnding: String
+        let content: Substring
+
+        if hasSuffix("\r\n") {
+            lineEnding = "\r\n"
+            content = dropLast(2)
+        } else if hasSuffix("\n") {
+            lineEnding = "\n"
+            content = dropLast()
+        } else if hasSuffix("\r") {
+            lineEnding = "\r"
+            content = dropLast()
+        } else {
+            lineEnding = ""
+            content = self[...]
+        }
+
+        let trailingWhitespaceCount = content.reversed().prefix { character in
+            guard let scalar = character.unicodeScalars.first else {
+                return false
+            }
+            return CharacterSet.whitespaces.contains(scalar)
+        }.count
+        let trimmedContent = content.dropLast(trailingWhitespaceCount)
+
+        return String(trimmedContent) + lineEnding
+    }
+}
+
 enum ActionError: Error {
     case noSelection
     case unknownCommand(String)

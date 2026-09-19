@@ -1,8 +1,9 @@
 #  XLineTool
 
-A modern xcode extension adding two key shortcuts:
+A modern xcode extension adding a few key shortcuts:
 * Duplicate currently selected lines
 * Add a newline after the current selected line
+* Remove all trailing whitespace
 
 ### Duplicate currently selected lines
 
@@ -12,6 +13,11 @@ I like to bind this to `cmd+shift+d`, so that it does the inverse of my "delete 
 ### Add a newline after the current selected line
 
 You might have read this and thought: "That's just what the enter key does!" However, the key difference here is that the cursor can be anywhere in the current line. In other words, it is the same as doing a `cmd+right` followed by `return`, except that I find it more convinient to bind this action to `shift+return`.
+
+### Remove trailing whitespace
+
+This is a more aggresive version of the xcode options "Automatically Trim Trailing Whitespace" and "Trim Whitespace-only Lines".
+There are many conditions where these don't take effect, especially the whitespace-only line option.
 
 ## Installing
 

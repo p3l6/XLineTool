@@ -37,6 +37,28 @@ struct XLineToolsTests {
             column: 4))
     }
 
+    @Test func `Trim trailing whitespace processes every line`() {
+        let buffer = MockSourceTextBuffer(
+            lines: [
+                "let value = 1   \n",
+                "\t \t\n",
+                "    leading and interior   spaces\t\r\n",
+                "unchanged\n",
+                "trailing tabs\t\t"
+            ],
+            selection: nil)
+
+        TrimTrailingWhitespaceAction(on: buffer).run()
+
+        #expect(buffer.lines == [
+            "let value = 1\n",
+            "\n",
+            "    leading and interior   spaces\r\n",
+            "unchanged\n",
+            "trailing tabs"
+        ])
+    }
+
     private func range(
         fromLine startLine: Int,
         column startColumn: Int,
