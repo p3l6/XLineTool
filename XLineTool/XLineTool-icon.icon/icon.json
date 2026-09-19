@@ -1,0 +1,88 @@
+{
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.56765,0.69709,0.96783,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill-specializations" : [
+            {
+              "value" : "system-dark"
+            },
+            {
+              "appearance" : "dark",
+              "value" : "system-light"
+            }
+          ],
+          "image-name" : "codelines.svg",
+          "name" : "codelines",
+          "position" : {
+            "scale" : 7.74,
+            "translation-in-points" : [
+              18,
+              -41
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    },
+    {
+      "layers" : [
+
+      ],
+      "name" : "Group",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    },
+    {
+      "layers" : [
+        {
+          "fill" : {
+            "solid" : "display-p3:0.30748,0.61835,0.70804,1.00000"
+          },
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "duplicate.svg",
+          "name" : "duplicate",
+          "position" : {
+            "scale" : 2.89,
+            "translation-in-points" : [
+              225,
+              231
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
