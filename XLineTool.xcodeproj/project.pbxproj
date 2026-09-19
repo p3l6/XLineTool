@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,11 @@
 		DAD041F6252C0620000584A4 /* XLineTools.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DAD041E7252C0620000584A4 /* XLineTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAD041FF252C0872000584A4 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; };
 		DAD04200252C0872000584A4 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD041EB252C0620000584A4 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD5F993305EFEA000F01EF0 /* SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */; };
+		DAD5F99B305F00BB00F01EF0 /* SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */; };
+		DAD5F99D305F012C00F01EF0 /* SourceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99C305F012C00F01EF0 /* SourceActions.swift */; };
+		DAD5F99E305F012C00F01EF0 /* SourceActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99C305F012C00F01EF0 /* SourceActions.swift */; };
+		DAD5F9A0305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +77,16 @@
 		DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		DAD041F2252C0620000584A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAD041F3252C0620000584A4 /* XLineTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XLineTools.entitlements; sourceTree = "<group>"; };
+		DAD5F98B305EFE9300F01EF0 /* XLineToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLineToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTextBuffer.swift; sourceTree = "<group>"; };
+		DAD5F99C305F012C00F01EF0 /* SourceActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceActions.swift; sourceTree = "<group>"; };
+		DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceTextBuffer+SourceTextBuffer.swift"; sourceTree = "<group>"; };
 		DAD99B4F2C89DD7000CBBE2F /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DAD5F98C305EFE9300F01EF0 /* XLineToolsTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = XLineToolsTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DAD041C9252C05C5000584A4 /* Frameworks */ = {
@@ -92,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD5F988305EFE9300F01EF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +122,7 @@
 				DA0152B9252C165900C06CB4 /* README.md */,
 				DAD041CE252C05C5000584A4 /* XLineTool */,
 				DAD041ED252C0620000584A4 /* XLineTools */,
+				DAD5F98C305EFE9300F01EF0 /* XLineToolsTests */,
 				DAD041E8252C0620000584A4 /* Frameworks */,
 				DAD041CD252C05C5000584A4 /* Products */,
 			);
@@ -112,6 +133,7 @@
 			children = (
 				DAD041CC252C05C5000584A4 /* XLineTool.app */,
 				DAD041E7252C0620000584A4 /* XLineTools.appex */,
+				DAD5F98B305EFE9300F01EF0 /* XLineToolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +176,9 @@
 				DAD041F0252C0620000584A4 /* SourceEditorCommand.swift */,
 				DAD041F2252C0620000584A4 /* Info.plist */,
 				DAD041F3252C0620000584A4 /* XLineTools.entitlements */,
+				DAD5F992305EFEA000F01EF0 /* SourceTextBuffer.swift */,
+				DAD5F99C305F012C00F01EF0 /* SourceActions.swift */,
+				DAD5F99F305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift */,
 			);
 			path = XLineTools;
 			sourceTree = "<group>";
@@ -198,6 +223,28 @@
 			productReference = DAD041E7252C0620000584A4 /* XLineTools.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
+		DAD5F98A305EFE9300F01EF0 /* XLineToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD5F98F305EFE9300F01EF0 /* Build configuration list for PBXNativeTarget "XLineToolsTests" */;
+			buildPhases = (
+				DAD5F987305EFE9300F01EF0 /* Sources */,
+				DAD5F988305EFE9300F01EF0 /* Frameworks */,
+				DAD5F989305EFE9300F01EF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DAD5F98C305EFE9300F01EF0 /* XLineToolsTests */,
+			);
+			name = XLineToolsTests;
+			packageProductDependencies = (
+			);
+			productName = XLineToolsTests;
+			productReference = DAD5F98B305EFE9300F01EF0 /* XLineToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					DAD041CB252C05C5000584A4 = {
@@ -213,6 +260,9 @@
 					};
 					DAD041E6252C0620000584A4 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					DAD5F98A305EFE9300F01EF0 = {
+						CreatedOnToolsVersion = 27.0;
 					};
 				};
 			};
@@ -231,6 +281,7 @@
 			targets = (
 				DAD041CB252C05C5000584A4 /* XLineTool */,
 				DAD041E6252C0620000584A4 /* XLineTools */,
+				DAD5F98A305EFE9300F01EF0 /* XLineToolsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +304,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAD5F989305EFE9300F01EF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -269,8 +327,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD5F99D305F012C00F01EF0 /* SourceActions.swift in Sources */,
 				DAD041EF252C0620000584A4 /* SourceEditorExtension.swift in Sources */,
+				DAD5F9A0305F012C00F01EF0 /* XCSourceTextBuffer+SourceTextBuffer.swift in Sources */,
 				DAD041F1252C0620000584A4 /* SourceEditorCommand.swift in Sources */,
+				DAD5F993305EFEA000F01EF0 /* SourceTextBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD5F987305EFE9300F01EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD5F99E305F012C00F01EF0 /* SourceActions.swift in Sources */,
+				DAD5F99B305F00BB00F01EF0 /* SourceTextBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +601,59 @@
 			};
 			name = Release;
 		};
+		DAD5F990305EFE9300F01EF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		DAD5F991305EFE9300F01EF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.p3l6.XLineToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +680,15 @@
 			buildConfigurations = (
 				DAD041F8252C0620000584A4 /* Debug */,
 				DAD041F9252C0620000584A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAD5F98F305EFE9300F01EF0 /* Build configuration list for PBXNativeTarget "XLineToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD5F990305EFE9300F01EF0 /* Debug */,
+				DAD5F991305EFE9300F01EF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

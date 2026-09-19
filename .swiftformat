@@ -1,0 +1,30 @@
+# Options
+
+--closingparen same-line
+--commas inline
+--decimalgrouping 3,5
+--exponentcase lowercase
+--header \n {file}\n XLineTool\n
+--ifdef outdent
+--indentstrings true
+--semicolons inline
+--typeattributes prev-line
+--wrapenumcases with-values
+
+# Rules
+
+--disable andOperator
+--enable blankLineAfterImports
+--enable blankLinesBetweenImports
+--disable hoistAwait
+--disable hoistTry
+--enable isEmpty
+--enable wrapEnumCases
+--disable wrapFunctionBodies
+--disable wrapIfExpressionBodies
+--disable wrapIfStatementBodies
+--disable wrapPropertyBodies
+--disable wrapMultilineStatementBraces
+
+# Exclude default Logger methods which use autoclosures
+--selfrequired print,debug,info,notice,warning,trace,error,critical
