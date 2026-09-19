@@ -1,3 +1,8 @@
+//
+//  SourceActions.swift
+//  XLineTool
+//
+
 import Foundation
 
 class ActionBase {
@@ -21,7 +26,7 @@ class ActionBase {
 class DuplicateLineAction: ActionBase {
     func run() {
         var duplicated = [String]()
-        for index in selectedLines.start.line...endLine {
+        for index in selectedLines.start.line ... endLine {
             if let line = buffer.line(at: index) {
                 duplicated.append(line)
             }

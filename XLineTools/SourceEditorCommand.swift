@@ -1,11 +1,15 @@
+//
+//  SourceEditorCommand.swift
+//  XLineTool
+//
+
 import Foundation
 import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     func perform(
         with invocation: XCSourceEditorCommandInvocation,
-        completionHandler: @escaping (Error?) -> Void
-    ) {
+        completionHandler: @escaping (Error?) -> Void) {
         switch invocation.commandIdentifier {
         case "dev.p3l6.XLineTool.XLineTools.Duplicate":
             do {

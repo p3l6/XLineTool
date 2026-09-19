@@ -1,3 +1,8 @@
+//
+//  SourceTextBuffer.swift
+//  XLineTool
+//
+
 import Foundation
 
 struct SourceTextPosition: Equatable {

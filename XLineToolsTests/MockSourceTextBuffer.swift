@@ -1,3 +1,8 @@
+//
+//  MockSourceTextBuffer.swift
+//  XLineTool
+//
+
 final class MockSourceTextBuffer: SourceTextBuffer {
     private(set) var lines: [String]
     private(set) var selection: SourceTextRange?
