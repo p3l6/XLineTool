@@ -11,6 +11,7 @@ struct XLineToolApp: App {
         WindowGroup {
             ContentView()
         }
-        .defaultSize(width: 480, height: 300)
+        .windowStyle(.hiddenTitleBar)
+        .defaultSize(width: 700, height: 550)
     }
 }

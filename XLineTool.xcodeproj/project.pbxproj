@@ -78,7 +78,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				"XLineTool-icon.icon",
 			);
 			target = DAD041CB252C05C5000584A4 /* XLineTool */;
 		};

@@ -19,10 +19,10 @@
           "image-name" : "codelines.svg",
           "name" : "codelines",
           "position" : {
-            "scale" : 7.74,
+            "scale" : 6.99,
             "translation-in-points" : [
-              18,
-              -41
+              -38,
+              -101
             ]
           }
         }
@@ -53,18 +53,19 @@
     {
       "layers" : [
         {
+          "blend-mode" : "normal",
           "fill" : {
-            "solid" : "display-p3:0.30748,0.61835,0.70804,1.00000"
+            "solid" : "display-p3:0.18203,0.61953,0.56928,1.00000"
           },
           "glass" : true,
           "hidden" : false,
           "image-name" : "duplicate.svg",
           "name" : "duplicate",
           "position" : {
-            "scale" : 2.89,
+            "scale" : 3.54,
             "translation-in-points" : [
-              225,
-              231
+              205,
+              197
             ]
           }
         }
