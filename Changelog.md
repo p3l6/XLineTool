@@ -10,8 +10,15 @@ Types of changes: New, Improved, Fixed, Removed.
 
 ## [Unreleased]
 
+_(note: don't forget to update versions in project navigator for all targets)_
+
+
+## [1.2.0] - 19 Sept 2026
+
 - New: Action to remove all trailing whitespace (including whitespace-only lines)
 - New: Action to join lines together with separating spaces
+- Improved: App landing page looks nicer
+- Minimum macOS: Increased to Tahoe 26.2 
 
 ## [1.1.1] - 30 Jan 2026
 
